@@ -35,7 +35,6 @@ main {
     display: flex;
     flex: 1 1 65%;
     flex-direction: column;
-    justify-content: space-evenly;
     background-color: var(--background-main);
 }
 
@@ -77,7 +76,6 @@ input {
     border-radius: 5px;
 }
 
-
 .body-container {
     display: flex;
 }
@@ -93,6 +91,20 @@ input {
     top: 30%;
 }
 
+.form-info-container {
+   height:30%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   max-width: 80%;
+   margin: 0 auto 0 auto;
+}
+
+.form-info-container p {
+    font-size: 20px;
+    max-width: 500px;
+}
 
 .fields-container {
     display: flex;
@@ -104,4 +116,8 @@ input {
     display: flex;
     flex-direction: column;
     gap:5px;
+}
+
+.form-submit-container {
+    height: 30%;
 }
