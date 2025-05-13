@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
+    <div class="body-container">
         <header>
-            <div class="company-banner absolute-center">
+            <div class="company-banner">
                 <h1>Japan Trip <span class="noto-serif-jp">日本旅行</span></h1>
             </div>
         </header>
@@ -20,15 +20,17 @@
             </div>
             
             <form action="#">
+                <fieldset>
                     <h2>Create a travel account</h2>
                     <div class="fields-container">
-                        <label for="first-name">First name</label><input type="text" name="first-name" id="first-name">
-                        <label for="last-name">Last name</label><input type="text" name="last-name" id="last-name">
-                        <label for="email">Email</label><input type="email" name="email" id="email">
-                        <label for="phone-number">Phone number</label><input type="text" name="phone-number" id="phone-number">
-                        <label for="password">Password</label><input type="password" name="password" id="password">
-                        <label for="confirm-password">Confirm Password</label><input type="password" name="confirm-password" id="confirm-password">
+                        <div class="field-container"><label for="first-name">First name</label><input type="text" name="first-name" id="first-name"></div>
+                        <div class="field-container"><label for="last-name">Last name</label><input type="text" name="last-name" id="last-name"></div>
+                        <div class="field-container"><label for="email">Email</label><input type="email" name="email" id="email"></div>
+                        <div class="field-container"><label for="phone-number">Phone number</label><input type="text" name="phone-number" id="phone-number"></div>
+                        <div class="field-container"><label for="password">Password</label><input type="password" name="password" id="password"></div>
+                        <div class="field-container"><label for="confirm-password">Confirm Password</label><input type="password" name="confirm-password" id="confirm-password"></div>
                     </div>
+                </fieldset>
             </form>
 
             <div class="form-submit">

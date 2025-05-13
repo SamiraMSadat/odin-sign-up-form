@@ -16,10 +16,8 @@
     --background-main: orangered;
     --background-secondary: wheat;
     --font-color-light: white;
-}
-
-.container {
-    display: flex;
+    --font-color-dark: rgb(82, 80, 80);
+    --border-color-grey: rgb(185, 185, 185);
 }
 
 header {
@@ -33,9 +31,55 @@ header {
     position: relative;
 }
 
+main {
+    display: flex;
+    flex: 1 1 65%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: var(--background-main);
+}
+
+form {
+    background-color: var(--background-secondary);
+    padding:  25px 0 25px 0;
+}
+
+form h2 {
+    color: var(--font-color-dark);
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin: auto;
+    border: none;
+    max-width: 80%;
+}
+
+
 h1 {
     color: var(--font-color-light);
     font-size: 48px;
+}
+
+p {
+    color: var(--font-color-light);
+}
+
+label {
+    color: var(--font-color-dark);
+}
+
+input {
+    min-width: 300px;
+    height: 25px;
+    padding:2px;
+    border:  1px solid var(--border-color-grey);
+    border-radius: 5px;
+}
+
+
+.body-container {
+    display: flex;
 }
 
 .company-banner {
@@ -49,23 +93,15 @@ h1 {
     top: 30%;
 }
 
-main {
-    display: flex;
-    flex: 1 1 65%;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: var(--background-main);
-}
-
-p {
-    color: var(--font-color-light);
-}
-
-form {
-    background-color: var(--background-secondary);
-}
 
 .fields-container {
     display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.field-container {
+    display: flex;
     flex-direction: column;
+    gap:5px;
 }
