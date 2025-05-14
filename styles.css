@@ -97,8 +97,7 @@ input {
    flex-direction: column;
    justify-content: center;
    gap: 30px;
-   max-width: 80%;
-   margin: 0 auto 0 auto;
+   margin-left: 10%;
 }
 
 .form-info-container p {
@@ -120,4 +119,18 @@ input {
 
 .form-submit-container {
     height: 30%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--font-color-dark);
+    font-size: 14px;
+}
+
+button, input {
+    border:  1px solid var(--border-color-grey);
+    border-radius: 5px;
 }
