@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Custom font for Japanese script */
+.noto-serif-jp {
+  font-family: "Noto Serif JP", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+}
+
+:root {
+    --background-main: orangered;
+    --background-secondary: wheat;
+    --font-color-light: white;
+    --font-color-dark: rgb(82, 80, 80);
+    --border-color-grey: rgb(185, 185, 185);
+}
+
+header {
+    background-image: url("./assets/maneki_neko.jpg");
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+    flex: 1 1 35%;
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex: 1 1 65%;
+    flex-direction: column;
+    background-color: var(--background-main);
+}
+
+form {
+    background-color: var(--background-secondary);
+    padding:  25px 0 25px 0;
+}
+
+form h2 {
+    color: var(--font-color-dark);
+    margin-bottom: 20px;
+}
+
+fieldset {
+    margin: auto;
+    border: none;
+    max-width: 80%;
+}
+
+
+h1 {
+    color: var(--font-color-light);
+    font-size: 48px;
+}
+
+p {
+    color: var(--font-color-light);
+}
+
+label {
+    color: var(--font-color-dark);
+}
+
+input {
+    min-width: 300px;
+    height: 25px;
+    padding:2px;
+    border:  1px solid var(--border-color-grey);
+    border-radius: 5px;
+}
+
+.body-container {
+    display: flex;
+}
+
+.company-banner {
+    background-color: rgb(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:10%;
+    position: absolute;
+    top: 30%;
+}
+
+.form-info-container {
+   height:30%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 30px;
+   margin-left: 10%;
+}
+
+.form-info-container p {
+    font-size: 20px;
+    max-width: 500px;
+}
+
+.fields-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.field-container {
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.form-submit-container {
+    height: 30%;
+    margin-left: 10%;
+    margin-top: 25px;
+}
+
+button[type="submit"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    color: var(--font-color-dark);
+    font-size: 14px;
+}
+
+button, input {
+    border:  1px solid var(--border-color-grey);
+    border-radius: 5px;
+}
